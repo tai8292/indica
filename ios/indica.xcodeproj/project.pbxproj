@@ -15,6 +15,12 @@
 		7699B88040F8A987B510C191 /* libPods-indica-indicaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-indica-indicaTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		92C82745295B08E60068F564 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92C82744295B08E60068F564 /* GoogleService-Info.plist */; };
+		92F9ADD3295B25A8004C4A6D /* FBSDKCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9ADD2295B25A8004C4A6D /* FBSDKCoreKit.xcframework */; };
+		92F9ADD4295B25A8004C4A6D /* FBSDKCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9ADD2295B25A8004C4A6D /* FBSDKCoreKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F9ADD7295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9ADD6295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework */; };
+		92F9ADD8295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9ADD6295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F9ADDA295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9ADD9295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework */; };
+		92F9ADDB295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92F9ADD9295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,22 @@
 			remoteInfo = indica;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92F9ADD5295B25A9004C4A6D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F9ADD4295B25A8004C4A6D /* FBSDKCoreKit.xcframework in Embed Frameworks */,
+				92F9ADDB295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework in Embed Frameworks */,
+				92F9ADD8295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* indicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = indicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +68,11 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-indica-indicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-indica-indicaTests.release.xcconfig"; path = "Target Support Files/Pods-indica-indicaTests/Pods-indica-indicaTests.release.xcconfig"; sourceTree = "<group>"; };
 		92C82744295B08E60068F564 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92F9ADD1295B0F83004C4A6D /* indica.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = indica.entitlements; path = indica/indica.entitlements; sourceTree = "<group>"; };
+		92F9ADD2295B25A8004C4A6D /* FBSDKCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit.xcframework; path = Pods/FBSDKCoreKit/XCFrameworks/FBSDKCoreKit.xcframework; sourceTree = "<group>"; };
+		92F9ADD6295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKCoreKit_Basics.xcframework; path = Pods/FBSDKCoreKit_Basics/XCFrameworks/FBSDKCoreKit_Basics.xcframework; sourceTree = "<group>"; };
+		92F9ADD9295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKGamingServicesKit.xcframework; path = Pods/FBSDKGamingServicesKit/XCFrameworks/FBSDKGamingServicesKit.xcframework; sourceTree = "<group>"; };
+		92F9ADDC295B26DA004C4A6D /* FBSDKLoginKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKLoginKit.xcframework; path = Pods/FBSDKLoginKit/XCFrameworks/FBSDKLoginKit.xcframework; sourceTree = "<group>"; };
+		92F9ADDF295B26DE004C4A6D /* FBSDKShareKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSDKShareKit.xcframework; path = Pods/FBSDKShareKit/XCFrameworks/FBSDKShareKit.xcframework; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -62,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F9ADD3295B25A8004C4A6D /* FBSDKCoreKit.xcframework in Frameworks */,
+				92F9ADD7295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework in Frameworks */,
+				92F9ADDA295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-indica.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +133,11 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92F9ADDF295B26DE004C4A6D /* FBSDKShareKit.xcframework */,
+				92F9ADDC295B26DA004C4A6D /* FBSDKLoginKit.xcframework */,
+				92F9ADD9295B26D5004C4A6D /* FBSDKGamingServicesKit.xcframework */,
+				92F9ADD6295B25BD004C4A6D /* FBSDKCoreKit_Basics.xcframework */,
+				92F9ADD2295B25A8004C4A6D /* FBSDKCoreKit.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-indica.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-indica-indicaTests.a */,
@@ -190,6 +225,7 @@
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 				60AFA348CF0527346B9F5B0E /* [CP-User] [RNFB] Core Configuration */,
+				92F9ADD5295B25A9004C4A6D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

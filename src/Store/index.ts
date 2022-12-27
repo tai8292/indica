@@ -1,30 +1,15 @@
-import { localStorage } from '@Core';
-import rootStore, { RootModel } from '@Store/Root.store';
-import { createStore, createTypedHooks, persist } from 'easy-peasy';
+import { createStore, createTypedHooks } from 'easy-peasy';
+
+import { authStore, AuthStore } from './Auth.store';
+import { chatStore, ChatStore } from './Chat.store';
 
 export interface StoreModel {
-  root: RootModel;
+  auth: AuthStore;
+  chat: ChatStore;
 }
 
 const { useStoreActions, useStoreState, useStoreDispatch, useStore } =
   createTypedHooks<StoreModel>();
-
-const customStorage = {
-  async getItem(key: string) {
-    const data = await localStorage.getItem(key);
-    if (data === null) {
-      return null;
-    }
-
-    return JSON.parse(data);
-  },
-  async setItem(key: string, data: unknown) {
-    return localStorage.setItem(key, JSON.stringify(data));
-  },
-  async removeItem(key: string) {
-    return localStorage.removeItem(key);
-  },
-};
 
 /*
  This is to fix an issue with
@@ -34,9 +19,8 @@ const customStorage = {
 window.requestIdleCallback = null;
 
 export const storeModel: StoreModel = {
-  root: persist(rootStore, {
-    storage: customStorage,
-  }),
+  chat: chatStore,
+  auth: authStore,
 };
 
 // TODO: Provide type definition for this
@@ -51,7 +35,7 @@ if (__DEV__) {
 }
 
 const store = createStore(storeModel, {
-  name: 'Starbucks',
+  name: 'Indica',
   enhancers: [...storeEnhancers],
 });
 
