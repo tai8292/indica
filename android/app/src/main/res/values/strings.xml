@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">indica</string>
+
+    <string name="facebook_app_id">1294700054594289</string>
+    <string name="fb_login_protocol_scheme">fb1294700054594289</string>
+    <string name="facebook_client_token">060b5d45d82ab058bd46b49dcba5eff2</string>
+
+
 </resources>
