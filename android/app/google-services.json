@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "335399848796",
+    "project_id": "indica-4e4e2",
+    "storage_bucket": "indica-4e4e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335399848796:android:61fae84497c0f5461c0f99",
+        "android_client_info": {
+          "package_name": "com.indica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335399848796-ghj2brolaurg0p751gvjv1qgsl0is6sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj9f6HPzG6ed7zCFQLAQjeSAIzQXFwawI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335399848796-ghj2brolaurg0p751gvjv1qgsl0is6sp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335399848796-79ikbjlr4tbjb2jgu8pjjvgb17gb516i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.indica"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
